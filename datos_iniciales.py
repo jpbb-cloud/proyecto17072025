@@ -1,0 +1,71 @@
+from Smartphone import Smartphone
+from Laptop import Laptop
+from Tablet import Tablet
+
+class DatosIniciales:
+    @staticmethod
+    def cargar(productos):
+        # Smartphones
+        productos.append(Smartphone("SP101", "Galaxy S23", "Samsung", 899.99, 7, 6.1, 128, True))
+        productos.append(Smartphone("SP102", "iPhone 14 Pro", "Apple", 1199.99, 5, 6.7, 256, True))
+        productos.append(Smartphone("SP103", "Pixel 7", "Google", 649.99, 4, 6.3, 128, True))
+        productos.append(Smartphone("SP104", "Xiaomi 13", "Xiaomi", 599.99, 10, 6.4, 256, True))
+        productos.append(Smartphone("SP105", "OnePlus 11", "OnePlus", 729.99, 6, 6.7, 256, True))
+        productos.append(Smartphone("SP106", "Motorola Edge 30", "Motorola", 499.99, 3, 6.5, 128, True))
+        productos.append(Smartphone("SP107", "Sony Xperia 5 IV", "Sony", 849.99, 2, 6.1, 128, True))
+        productos.append(Smartphone("SP108", "Huawei P50 Pro", "Huawei", 799.99, 5, 6.6, 256, False))
+        productos.append(Smartphone("SP109", "Nokia X30", "Nokia", 399.99, 7, 6.43, 128, True))
+        productos.append(Smartphone("SP110", "Vivo X90", "Vivo", 699.99, 4, 6.78, 256, True))
+        productos.append(Smartphone("SP111", "Realme GT Neo 3", "Realme", 429.99, 6, 6.7, 256, True))
+        productos.append(Smartphone("SP112", "Asus ROG Phone 7", "Asus", 999.99, 2, 6.78, 512, True))
+        productos.append(Smartphone("SP113", "Honor Magic5 Pro", "Honor", 1099.99, 3, 6.81, 512, True))
+        productos.append(Smartphone("SP114", "Google Pixel Fold", "Google", 1799.99, 1, 7.6, 256, True))
+        productos.append(Smartphone("SP115", "Samsung Z Flip4", "Samsung", 999.99, 4, 6.7, 128, True))
+        productos.append(Smartphone("SP116", "iPhone SE (2022)", "Apple", 429.99, 8, 4.7, 64, False))
+        productos.append(Smartphone("SP117", "Oppo Find X5", "Oppo", 749.99, 3, 6.55, 256, True))
+        productos.append(Smartphone("SP118", "Nothing Phone (1)", "Nothing", 479.99, 5, 6.55, 128, True))
+        productos.append(Smartphone("SP119", "Redmi Note 12", "Xiaomi", 289.99, 12, 6.67, 128, True))
+        productos.append(Smartphone("SP120", "Samsung Galaxy A53", "Samsung", 349.99, 9, 6.5, 128, True))
+
+        # Laptops
+        productos.append(Laptop("LP201", "MacBook Pro 16", "Apple", 2499.99, 3, "Apple M2 Pro", 16, True))
+        productos.append(Laptop("LP202", "Dell XPS 15", "Dell", 1999.99, 2, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP203", "HP Spectre x360", "HP", 1899.99, 4, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP201", "MacBook Pro 16", "Apple", 2499.99, 3, "Apple M2 Pro", 16, True))
+        productos.append(Laptop("LP202", "Dell XPS 15", "Dell", 1999.99, 2, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP203", "HP Spectre x360", "HP", 1899.99, 4, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP204", "Lenovo Legion 5", "Lenovo", 1399.99, 5, "AMD Ryzen 7", 16, True))
+        productos.append(Laptop("LP205", "Asus TUF Gaming", "Asus", 1299.99, 6, "Intel Core i5", 16, True))
+        productos.append(Laptop("LP206", "Acer Predator Helios", "Acer", 1599.99, 3, "Intel Core i7", 16, True))
+        productos.append(Laptop("LP207", "MSI GF63", "MSI", 999.99, 5, "Intel Core i5", 8, True))
+        productos.append(Laptop("LP208", "Microsoft Surface Laptop 5", "Microsoft", 1299.99, 4, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP209", "Razer Blade 15", "Razer", 2399.99, 2, "Intel Core i7", 16, True))
+        productos.append(Laptop("LP210", "LG Gram 16", "LG", 1499.99, 3, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP211", "Gigabyte Aorus 15", "Gigabyte", 1799.99, 2, "Intel Core i7", 16, True))
+        productos.append(Laptop("LP212", "Alienware x14", "Dell", 1899.99, 2, "Intel Core i7", 16, True))
+        productos.append(Laptop("LP213", "HP Envy 13", "HP", 1099.99, 6, "Intel Core i5", 8, False))
+        productos.append(Laptop("LP214", "Lenovo ThinkBook 14", "Lenovo", 999.99, 4, "Intel Core i5", 8, False))
+        productos.append(Laptop("LP215", "Asus ZenBook Pro Duo", "Asus", 2199.99, 2, "Intel Core i9", 32, True))
+        productos.append(Laptop("LP216", "Acer Swift 3", "Acer", 749.99, 5, "AMD Ryzen 5", 8, False))
+        productos.append(Laptop("LP217", "MSI Prestige 15", "MSI", 1499.99, 2, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP218", "Samsung Galaxy Book2", "Samsung", 1099.99, 3, "Intel Core i7", 16, False))
+        productos.append(Laptop("LP219", "Huawei MateBook D15", "Huawei", 899.99, 4, "Intel Core i5", 8, False))
+        productos.append(Laptop("LP220", "Chuwi HeroBook Pro", "Chuwi", 299.99, 8, "Intel Celeron", 8, False))
+
+        # Tablets
+        productos.append(Tablet("TB301", "iPad Pro 12.9", "Apple", 1199.99, 5, True, "iPadOS"))
+        productos.append(Tablet("TB302", "Galaxy Tab S9", "Samsung", 999.99, 6, True, "Android"))
+        productos.append(Tablet("TB303", "Surface Pro 9", "Microsoft", 1399.99, 4, True, "Windows 11"))
+        productos.append(Tablet("TB304", "Lenovo Tab P12", "Lenovo", 499.99, 7, False, "Android"))
+        productos.append(Tablet("TB305", "Huawei MatePad Pro", "Huawei", 699.99, 6, True, "HarmonyOS"))
+        productos.append(Tablet("TB306", "Amazon Fire HD 10", "Amazon", 149.99, 10, False, "FireOS"))
+        productos.append(Tablet("TB307", "Xiaomi Pad 6", "Xiaomi", 399.99, 8, False, "Android"))
+        productos.append(Tablet("TB308", "Nokia T20", "Nokia", 249.99, 5, False, "Android"))
+        productos.append(Tablet("TB309", "Alcatel 3T 10", "Alcatel", 179.99, 6, False, "Android"))
+        productos.append(Tablet("TB310", "iPad Mini 6", "Apple", 599.99, 4, False, "iPadOS"))
+        productos.append(Tablet("TB311", "Asus Vivobook 13 Slate", "Asus", 649.99, 3, True, "Windows 11"))
+        productos.append(Tablet("TB312", "Teclast T40 Pro", "Teclast", 299.99, 7, False, "Android"))
+        productos.append(Tablet("TB313", "Chuwi HiPad Max", "Chuwi", 239.99, 5, False, "Android"))
+        productos.append(Tablet("TB314", "Samsung Tab A8", "Samsung", 229.99, 9,False, "Android"))
+
+        print("Productos cargados en el inventario.")
