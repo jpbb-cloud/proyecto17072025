@@ -1,0 +1,34 @@
+# Archivos de configuración local
+*.env
+*.local
+*.secret
+
+# Tokens, claves privadas y credenciales
+*.pem
+*.key
+*.token
+*.bat
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Binarios y compilados
+*.exe
+*.dll
+*.class
+*.pyc
+
+# Carpeta de dependencias (ej. Node.js)
+node_modules/
+
+# Carpetas de entorno virtual (Python)
+venv/
+.env/
+
+# IDEs
+.vscode/
+.idea/
